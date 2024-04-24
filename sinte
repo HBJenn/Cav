@@ -1,0 +1,71 @@
+TempoClock.tempo=60/120;
+(
+(
+~son1 = Pdef(\son1, Pbind(\instrument, \audio1,
+	\dur, Pseq([1/4, Pn(1/8,10)], inf),
+	\sus, Pseq([0.2], inf),
+	\rel, Pseq([0.05,0.01,0.5,0.3], inf),
+	\rate, Pseq([-36,-34, Pn(-32,8)].midicps, inf),
+	\sp, Pseq([0.5, Pn(0,8)], inf),
+	\amp, 0.8
+))
+);
+~son1.play.quant(4)
+
+(
+~son2 = Pdef(\son2, Pbind(\instrument, \audio2,
+	\dur, Pseq([1/4, Pn(1/4),6], inf),
+	\sus, Pseq([0.04], inf),
+	\rel, Pseq([0.4,0.05], inf),
+	\rate, Pseq([1,1,1,2], inf),
+	\sp, Pseq([0], inf),
+	\amp, 0.8
+))
+);
+
+(
+~son3 = Pdef(\son3, Pbind(\instrument, \audio3,
+	\dur, Pseq([1/4, 1/4], inf),
+	\sus, Pseq([0.4], inf),
+	\rel, Pseq([0.4], inf),
+	\rate, Pseq([1], inf),
+	\sp, Pseq([0], inf),
+	\amp, 0.8
+))
+);
+
+(
+~son4 = Pdef(\son4, Pbind(\instrument, \audio4,
+	\dur, Pseq([1/2], inf),
+	\sus, Pseq([0.4], inf),
+	\rel, Pseq([0.4, 0.2], inf),
+	\rate, Pseq([1], inf),
+	\sp, Pseq([0], inf),
+	\amp, 0.7,
+	\out, 0
+))
+);
+
+(
+~son5 = Pdef(\son5, Pbind(\instrument, \audio5,
+	\dur, Pseq([1/4, Pn(1/8,10)], inf),
+	\sus, Pseq([0.4, 0.02], inf),
+	\rel, Pseq([0.3, 0.4, 0.3,0.4], inf),
+	\rate, Pseq([0.5,0.4,0.5,0.4], inf),
+	\sp, Pseq([1, 0], inf),
+	\amp, 0.8
+))
+);
+
+(
+~son6 = Pdef(\son6, Pbind(\instrument, \audio6,
+	\dur, Pseq([1/4], inf),
+	\sus, Pseq([0.4,0,2], inf),
+	\rel, Pseq([0.2, 0.4], inf),
+	\rate, Pseq([1,1,1,1], inf),
+	\sp, 0,
+	\amp, 0.9
+))
+);
+);
+
