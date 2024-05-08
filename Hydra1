@@ -1,0 +1,14 @@
+await loadScript("https://hyper-hydra.glitch.me/hydra-text.js")
+
+hydraText.font="serif"
+hydraText.LineWidth="3%"
+str1= "Hola"
+str2= "tonotos"
+voronoi(2,4) 
+  .blend(text(str1))
+  .layer(strokeText(str2).modulate(noise(1,1), .4))
+  .color(2,5,1) 
+  .rotate(0.2,0.5) 
+  //.layer(text(str2)) 
+  //.blend(strokeText(str2)) 
+  .out()
